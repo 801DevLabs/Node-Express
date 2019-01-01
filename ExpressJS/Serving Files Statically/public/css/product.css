@@ -1,0 +1,32 @@
+.product-form {
+  width: 20rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.form-control {
+  margin: 1rem 0;
+  width: 100%;
+}
+.form-control label,
+.form-control input {
+  display: block;
+}
+
+.form-control input {
+  border: solid 1px #efefef;
+  height: 40px;
+  width: 96%;
+  padding: 0 2%;
+  font-size: 1rem;
+  border-radius: .4rem;
+}
+button {
+  border: none;
+  border-radius: 4px;
+  background: #108FF2;
+  color: white;
+  height: 40px;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
