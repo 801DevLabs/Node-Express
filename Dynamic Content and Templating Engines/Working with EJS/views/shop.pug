@@ -1,0 +1,21 @@
+extends layouts/main-layout.pug
+
+block styles
+  link(rel="stylesheet", href="/css/product.css")
+block content
+  main
+    if prods.length > 0
+        .grid
+          each product in prods
+            article.card.product-item
+              header.card__header
+                h1.product__tittle #{product.title}
+              .card__image
+                img(src="https://assets.simpleviewcms.com/simpleview/image/fetch/q_75/https://res.cloudinary.com/simpleview/image/upload/crm/parkcity/books_4859503D-C558-40BD-BF8E0023F8F2E057_e34e4e7e-ce74-4db0-b76c2d6bffa12303.jpg", alt="book")
+              .card__content
+                h2.product__price $19.99
+                p.product__description A very interesting book about so many even more
+              .card__actions
+                button.btn Add to Cart
+    else
+      h1 No Product
